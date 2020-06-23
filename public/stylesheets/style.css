@@ -1,8 +1,129 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Reset browser styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background: url(../images/bg01.png) top center #eee;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+header .title {
+  margin-top: -14px;
+}
+
+header .title a {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 500;
+  color: #ef180f;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+header .container {
+  padding: 30px 0;
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #393f44;
+  font-weight:700;
+  text-decoration: none;
+  padding: 10px;
+  font-size:14px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background: #393f44;
+  color: #fff;
+  border-radius: 7px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+  }
 }
