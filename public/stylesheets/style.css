@@ -156,6 +156,9 @@ nav ul li a:hover, nav ul li a.active {
   content: "\f059";
 }
 
+.file::before {
+  content: "\f0f6";
+}
 /* Fin Font Awesome */
 .section1 .container {
   background: #fff;
@@ -339,6 +342,78 @@ h4 {
   }
 
   .card li {
+    width: 100%;
+  }
+}
+/* Section 3 */
+.section3 {
+  background: #fff;
+  box-shadow: 0px 4px 2px 0px #ccc;
+  padding: 50px 0;
+}
+
+aside {
+  width: 30%;
+  display: block;
+}
+
+.content {
+  width: 65%;
+}
+
+.btn.other {
+  width: fit-content;
+  font-size: 24px;
+  padding: 16px;
+  margin: 10px 0;
+}
+
+ul.blocks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+ul.blocks li {
+  width: 48%;
+  height: 100px;
+  background: #eee;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+h3 {
+  color: #444;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 25px 0;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul.blocks li img {
     width: 100%;
   }
 }
