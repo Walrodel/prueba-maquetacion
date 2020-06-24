@@ -159,6 +159,34 @@ nav ul li a:hover, nav ul li a.active {
 .file::before {
   content: "\f0f6";
 }
+
+.twitter::before {
+  content: "\f081";
+}
+
+.facebook::before {
+  content: "\f082";
+}
+
+.instagram::before {
+  content: "\f16d";
+  background-color: #4a4242;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 27px;
+}
+
+.dribble::before {
+  content: "\f17d";
+  background-color: #4a4242;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 27px;
+}
+
+.pinterest::before {
+  content: "\f0d3";
+}
 /* Fin Font Awesome */
 .section1 .container {
   background: #fff;
@@ -415,5 +443,43 @@ h3 {
 
   ul.blocks li img {
     width: 100%;
+  }
+}
+/* footer */
+footer {
+  padding: 50px 0;
+  line-height: 30px;
+  font-size: 18px;
+  color: #444;
+}
+
+footer a {
+  color: inherit;
+}
+
+.section {
+  width: 25%;
+}
+
+.social li {
+  display: inline;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.rights {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+    padding: 10px;
   }
 }
